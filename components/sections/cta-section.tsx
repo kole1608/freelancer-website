@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 
 export default function CTASection() {
@@ -31,20 +32,24 @@ export default function CTASection() {
 
           {/* Call to Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <Button 
-              size="lg" 
-              variant="secondary"
-              className="text-lg px-8 py-4"
-            >
-              Start Your Project Today
-            </Button>
-            <Button 
-              size="lg" 
-              variant="outline"
-              className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-primary"
-            >
-              Schedule Free Consultation
-            </Button>
+            <Link href="/contact">
+              <Button 
+                size="lg" 
+                variant="secondary"
+                className="text-lg px-8 py-4"
+              >
+                Start Your Project Today
+              </Button>
+            </Link>
+            <Link href="/contact">
+              <Button 
+                size="lg" 
+                variant="outline"
+                className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-primary"
+              >
+                Schedule Free Consultation
+              </Button>
+            </Link>
           </div>
 
           {/* Contact Information */}

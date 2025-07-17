@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import { Card, CardContent } from '@/components/ui/card'
 
 const testimonials = [
@@ -98,12 +99,16 @@ export default function TestimonialsSection() {
             Let's discuss your project and see how we can help your business grow.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-primary text-white px-8 py-3 rounded-md hover:bg-primary/90 transition-colors font-medium">
-              Start Your Project
-            </button>
-            <button className="border border-gray-300 text-gray-700 px-8 py-3 rounded-md hover:bg-gray-50 transition-colors font-medium">
-              View Portfolio
-            </button>
+            <Link href="/contact">
+              <button className="bg-primary text-white px-8 py-3 rounded-md hover:bg-primary/90 transition-colors font-medium">
+                Start Your Project
+              </button>
+            </Link>
+            <Link href="/portfolio">
+              <button className="border border-gray-300 text-gray-700 px-8 py-3 rounded-md hover:bg-gray-50 transition-colors font-medium">
+                View Portfolio
+              </button>
+            </Link>
           </div>
         </div>
       </div>
